@@ -2,22 +2,27 @@
 <html>
 <head>
 	<style>
-	h1 {
-		color:blue;
-		font-family:verdana;
-		font-size:300%;
-	}
-	p{
-		color:red;
-		font-family:courier;
-		font-size:160%;
-	}
+		body {background-color:lightgrey}
+/* 		h1 {color:blue} */
+/* 		p {color:green} */
+		h1{
+			color:blue; 
+			font-family:verdana;
+			font-size:300%;
+		}
+		p{ 
+			color:red;
+			font-family:courier;
+			font-size:160%;
+		}
 	</style>
-   	<title>Praktikum Pemrograman Web</title>
+	
+   	<title>Praktikum Web</title>
 </head>
 <body>
-	<H1>Tabel</H1>
-  <table border="1" width="100%">
+	<H1>Table</H1>
+	
+	<table border="1" width="100%">
  	<thead>
 	<tr>
         <th>Header Kolom 1</td>
@@ -40,45 +45,51 @@
     	</tr>
 	</tfoot>
 	</table>
-	<H1>Form</H1>
-<form action="/action_page.php" method="get">
-  		<label for="nama"> nama: </label>
+
+  <H1>Form</H1>
+
+  	<form action="/action_page.php" method="get">
+  		<label for=“nama"> nama: </label>
   		<input type="text" id="nama" name="nama">
 				<br><br>
 
 		<input type="submit" value="Submit">
 	</form>
-<form action="/action_page.php" method="get">
-		<label for="nama"> nama : </label>
-  		<input type="text" id="nama" name="nama"><br><br>
+
+        <form action="/action_page.php" method="get">
+		<label for=“nama”> nama : </label>
+  		<input type="text" id="nama“ name="nama"><br><br>
 		
 	</form>
-<form action=“/action_page.php" method="get">
-	 	<label for="email"> Email : </label>
-		<input type="email" id="email" name="email" >
+
+        <form action=“/action_page.php” method=“get”>
+	 	<label for=“email”> Email : </label>
+		<input type=“email” id=“email” name=“email” >
 
 	<br />
 
-	 	<label for="pass"> Password : </label>
-		<input type="password" id="pass" name="password" minlength="8" >
+	 	<label for=“pass”> Password : </label>
+		<input type=“password” id=“pass” name=“password” minlength=“8” >
 
 	</form>
-<form action="/action_page.php" method="post">
 
- 		<input type="checkbox" id="hobi1" name="hobi" value="Membaca" checked />
-		<label for="hobi1"> Membaca </label>
+        <form action="/action_page.php" method=“post">
+
+ 		<input type="checkbox" id=“hobi1” name=“hobi" value=“Membaca” checked />
+		<label for=“hobi1"> Membaca </label>
 
 
       	<br />
 
-		<input type="checkbox" id="hobi2" name="hobi" value="Menulis" /
-		<label for="hobi2"> Menulis </label>
+		<input type="checkbox" id=“hobi2” name=“hobi“ value=“Menulis” /
+		<label for=“hobi2"> Menulis </label>
 
 	</form>
-<form action="/action_page.php" method="post">
+
+        <form action="/action_page.php" method=“post">
 
 		<input type="radio" 
-			id="laki_laki" 
+			id=“laki_laki” 
 			name="jenis_kelamin" 
 			value="laki-laki" checked />
 		<label for=“laki_laki"> Laki-Laki </label>
@@ -86,27 +97,25 @@
 		<br />
 
 		<input type="radio" 
-			id="perempuan" 
+			id=“perempuan” 
 			name="jenis_kelamin" 
 			value="perempuan" />
 			<label for=“perempuan">Perempuan </label>
 
 	</form>
 
-
-	<form action="/action_page.php" method="post">
+        <form action="/action_page.php" method=“post">
 		
 		<input type="submit" value="Submit">
 
 	</form>
-	<H1>Submit</H1>
 
-	<form action="/action_page.php" method="get">
+        <form action="/action_page.php" method="get">
   		<input type="text" 
 			id="nama" 
-			value="Nama Kamu" 							name="nama"> <br><br>
+			value=“Nama Kamu” 							name="nama"> <br><br>
 		
-		<input type="password" name=“pass"><br><br>
+		<input type=“password" name=“pass"><br><br>
 
 		<input type="radio" 
 			name="jenis_kelamin" 
@@ -125,6 +134,32 @@
 		<input type="submit" value="Submit">
 	</form>
 
+       <label for="inputDesc">Deskripsi : </label>
 
+	<br>
+
+	<textarea id="inputDesc" name="Deskripsinya" rows="4" cols="50">
+        </textarea>
+
+        <form action="/action_page.php“ method=“post”>
+         <label for="presma">Pilih Calon PRESMA:</label>
+         <br>
+         <select name="pilihan" id="presma">
+         <optgroup label="Fakultas Teknik">
+         <option value="Sukat">Sukat</option>
+         <option value="Subagyo">Subagyo</option>
+         </optgroup>
+         <optgroup label="Fakultas MIPA">
+         <option value="Sunami">Sunami</option>
+         <option value="Sunduken">Sunduken</option>
+         </optgroup>
+         </select>
+         <br><br>
+         <input type="submit" value="Submit">
+        </form>
+	
+	<h1>CSS</h1>
+	<P>Paragraph</P>
+	
 </body>
 </html>
